@@ -27,7 +27,7 @@ class LoginForm extends Component {
     if (password === ' ') {
       this.setState({showErrorMsg: true, errorMessage: 'Invalid User Id'})
     } else {
-      const userDetails = {inputUserId: 142420, password: 231225}
+      const userDetails = {user_id:inputUserId, pin:password}
       const url = `https://apis.ccbp.in/ebank/login`
       const options = {
         method: 'POST',
